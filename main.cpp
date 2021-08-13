@@ -121,7 +121,7 @@ void insert(Node* head_ref, int index, int new_data)
     new_node->prev = temp;
     new_node->next = temp->next;
     temp->next = new_node;
-    temp->next->prev = new_node;//!
+    new_node->next->prev = new_node;
 }
 void push_front(Node** head_ref, int new_data)
 {
@@ -180,11 +180,12 @@ int main()
     push_front(&a, 3);
     push_front(&a, 30);
     push_back(&a, 159);
+    printList(a);
     insert(a, 1, 88);
     //pop_front(&a);
     //pop_front(&a);
-    pop_back(&a);
-    pop_back(&a);
+    //pop_back(&a);
+    //pop_back(&a);
     cout << "the linked list size is " << node_count(a) << endl;
     cout << "Linked List before sorting \n";
     printList(a);
