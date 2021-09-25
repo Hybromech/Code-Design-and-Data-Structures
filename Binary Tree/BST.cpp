@@ -128,7 +128,7 @@ void BST::RemoveNodePrivate(node* node)
 		BST::node* replace = new BST::node;//create new tempory node
 		replace = node->right; //discard the branch on the left, so the node to inspect is on the right branch
 		//search for the lowest value that is higher than the node to be removed
-		while(replace->left == nullptr)//if this is the smallest node in the branch.
+		while(replace->left != nullptr)//if this is the smallest node in the branch.
 		{
 			replace = replace->left;
 		}
