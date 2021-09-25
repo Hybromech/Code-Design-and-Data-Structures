@@ -10,9 +10,7 @@ string readFile(const char* filename)
 	char file_data = 0;
 
 	ifstream rf;
-	//rf.open("./assets/test.dat");
 	rf.open(filename);
-	//rf.open("D:/Andrew/AIE/Diploma of Digital and Interactive Games/Subjects/Math for Games/Projects/Graphics Test Game/assets/Images/tank.png");
 	if (!rf.is_open())//check if the file is open
 	{
 		cout << "File load error" << endl;
@@ -22,8 +20,7 @@ string readFile(const char* filename)
 	//rf >> file_data;
 	//cout << file_data;
 
-	while (!rf.eof()) { // keep reading until end-of-file
-
+	while (!rf.eof()) { //keep reading until end-of-file
 		//cout << "The next number is " << file_data << endl;
 		getline(rf, s_line);
 		s_file += s_line;

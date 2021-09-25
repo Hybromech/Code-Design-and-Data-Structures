@@ -104,8 +104,8 @@ void printList(Node* head)
     cout << endl;
 }
 
-/* Function to insert a node at the
-beginning of the Doubly Linked List */
+/* Function to insert a node at an arbitary position in the
+    Doubly Linked List */
 void insert(Node* head_ref, int index, int new_data)
 {
     Node* new_node = new Node; /* allocate node */
@@ -122,6 +122,45 @@ void insert(Node* head_ref, int index, int new_data)
     new_node->next = temp->next;
     temp->next = new_node;
     new_node->next->prev = new_node;
+}
+
+/* Function to remove a node at an arbitary position in the
+    Doubly Linked List */
+void Remove(Node** head_ref, int index)
+{
+    Node* head = *head_ref;
+    Node* temp = *head_ref;//set temp testing node to head
+
+    int count = 0;
+    while (count != index && temp != nullptr)
+    {
+        temp = temp->next;
+        count++;
+    }
+    //remove temp and relink its next and previous
+    //check to see if temps next and previous has a valid node
+    if (temp == *head_ref)
+    {
+        head = temp->next;
+        head->prev = nullptr;
+        delete head->prev;
+    }
+    else if (temp == lastNode(head))
+    {
+        temp = temp->prev;
+        temp->next = nullptr;
+        delete temp->next;
+    }
+    else //the node is somewhere in the middle
+    {
+        //relink the list
+        temp->next->prev = temp->prev;
+        temp->prev->next = temp->next;
+        //delete temp
+        temp = nullptr;
+        delete temp;
+    }   
+    *head_ref = head; 
 }
 void push_front(Node** head_ref, int new_data)
 {
@@ -168,7 +207,6 @@ void pop_back(Node** head_ref)
     lastNode(*head_ref)->prev->next = nullptr;
 }
 
-
 /* Driver code */
 int main()
 {
@@ -180,8 +218,10 @@ int main()
     push_front(&a, 3);
     push_front(&a, 30);
     push_back(&a, 159);
+    insert(a, 0, 88);//insert node at index 0
     printList(a);
-    insert(a, 1, 88);
+    Remove(&a, 0);
+    printList(a);
     //pop_front(&a);
     //pop_front(&a);
     //pop_back(&a);

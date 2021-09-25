@@ -12,13 +12,11 @@ string data_arr[tableSize];
 int main()
 {
 	//change to relative paths
-	string data1 = readFile("D:/Andrew/AIE/Diploma of Digital and Interactive Games/Subjects/Math for Games/Projects/Graphics Test Game/assets/test.dat");
-	string data2 = readFile("D:/Andrew/AIE/Diploma of Digital and Interactive Games/Subjects/Math for Games/Projects/Graphics Test Game/assets/test1.dat");
-	string data3 = readFile("D:/Andrew/AIE/Diploma of Digital and Interactive Games/Subjects/Math for Games/Projects/Graphics Test Game/assets/test2.dat");
-	string data4 = readFile("D:/Andrew/AIE/Diploma of Digital and Interactive Games/Subjects/Math for Games/Projects/Graphics Test Game/assets/test3.dat");
-	string data5 = readFile("D:/Andrew/AIE/Diploma of Digital and Interactive Games/Subjects/Math for Games/Projects/Graphics Test Game/assets/test4.dat");
-	//string data1 = readFile("D:/Andrew/AIE/Diploma of Digital and Interactive Games/Subjects/Math for Games/Projects/Graphics Test Game/assets/Images/tank.png");
-	//char* hashtable = &data[0];
+	string data1 = readFile("../Files/test.dat");
+	string data2 = readFile("../Files/test1.dat");
+	string data3 = readFile("../Files/test2.dat");
+	string data4 = readFile("../Files/test3.dat");
+	string data5 = readFile("../Files/test4.dat");
 
 	Insert(data1, data1.length());
 	Insert(data1, data1.length());
@@ -26,7 +24,6 @@ int main()
 	Insert(data3, data3.length());
 	Insert(data4, data4.length());
 	Insert(data5, data5.length());
-
 }
 unsigned int Hash(string data, unsigned int length)
 {
