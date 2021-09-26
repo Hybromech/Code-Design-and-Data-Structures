@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Linked List", "Linked List.vcxproj", "{612F22C4-57A0-4F91-858E-F155EDD3CE5D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Linked List", "Projects\Linked List\Linked List.vcxproj", "{612F22C4-57A0-4F91-858E-F155EDD3CE5D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Binary Tree", "Binary Tree\Binary Tree.vcxproj", "{3067D7C0-832D-41C1-B982-2B7075D00181}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Binary Tree", "Projects\Binary Tree\Binary Tree.vcxproj", "{3067D7C0-832D-41C1-B982-2B7075D00181}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hashing", "Hashing\Hashing.vcxproj", "{62B6CDAB-368B-4568-BFB6-A9D49FE5415E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hashing", "Projects\Hashing\Hashing.vcxproj", "{62B6CDAB-368B-4568-BFB6-A9D49FE5415E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Interprocess_1", "Projects\Interprocess_1\Interprocess_Comunication.vcxproj", "{863BA40C-30BF-4985-9A84-3322864BC199}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Interprocess_2", "Projects\Interprocess_2\Interprocess_2.vcxproj", "{9AF94EB4-31DF-4935-92C1-6C6D6A3387A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,22 @@ Global
 		{62B6CDAB-368B-4568-BFB6-A9D49FE5415E}.Release|x64.Build.0 = Release|x64
 		{62B6CDAB-368B-4568-BFB6-A9D49FE5415E}.Release|x86.ActiveCfg = Release|Win32
 		{62B6CDAB-368B-4568-BFB6-A9D49FE5415E}.Release|x86.Build.0 = Release|Win32
+		{863BA40C-30BF-4985-9A84-3322864BC199}.Debug|x64.ActiveCfg = Debug|x64
+		{863BA40C-30BF-4985-9A84-3322864BC199}.Debug|x64.Build.0 = Debug|x64
+		{863BA40C-30BF-4985-9A84-3322864BC199}.Debug|x86.ActiveCfg = Debug|Win32
+		{863BA40C-30BF-4985-9A84-3322864BC199}.Debug|x86.Build.0 = Debug|Win32
+		{863BA40C-30BF-4985-9A84-3322864BC199}.Release|x64.ActiveCfg = Release|x64
+		{863BA40C-30BF-4985-9A84-3322864BC199}.Release|x64.Build.0 = Release|x64
+		{863BA40C-30BF-4985-9A84-3322864BC199}.Release|x86.ActiveCfg = Release|Win32
+		{863BA40C-30BF-4985-9A84-3322864BC199}.Release|x86.Build.0 = Release|Win32
+		{9AF94EB4-31DF-4935-92C1-6C6D6A3387A1}.Debug|x64.ActiveCfg = Debug|x64
+		{9AF94EB4-31DF-4935-92C1-6C6D6A3387A1}.Debug|x64.Build.0 = Debug|x64
+		{9AF94EB4-31DF-4935-92C1-6C6D6A3387A1}.Debug|x86.ActiveCfg = Debug|Win32
+		{9AF94EB4-31DF-4935-92C1-6C6D6A3387A1}.Debug|x86.Build.0 = Debug|Win32
+		{9AF94EB4-31DF-4935-92C1-6C6D6A3387A1}.Release|x64.ActiveCfg = Release|x64
+		{9AF94EB4-31DF-4935-92C1-6C6D6A3387A1}.Release|x64.Build.0 = Release|x64
+		{9AF94EB4-31DF-4935-92C1-6C6D6A3387A1}.Release|x86.ActiveCfg = Release|Win32
+		{9AF94EB4-31DF-4935-92C1-6C6D6A3387A1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

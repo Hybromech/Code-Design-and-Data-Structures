@@ -1,4 +1,0 @@
-﻿  main.cpp
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Code Design and Data Structures\Projects\Code Design and Data Structures\Hashing\main.cpp(33,32): warning C4244: '+=': conversion from 'double' to 'unsigned int', possible loss of data
-D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Code Design and Data Structures\Projects\Code Design and Data Structures\Hashing\main.cpp(38): warning C4715: 'Hash': not all control paths return a value
-  Hashing.vcxproj -> D:\Andrew\AIE\Diploma of Digital and Interactive Games\Subjects\Code Design and Data Structures\Projects\Code Design and Data Structures\Debug\Hashing.exe
